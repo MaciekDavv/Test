@@ -74,6 +74,9 @@ private:
 
 class MenageAcctor {
 public:
+    void addUnit(std::unique_ptr<Unit> unit) {
+        units_.push_back(std::move(unit));
+    }
 private:
     std::vector<std::unique_ptr<Unit>> units_;
 };
