@@ -72,6 +72,12 @@ private:
     std::string sord_{"sord"};
 };
 
+class MenageAcctor {
+public:
+private:
+    std::vector<std::unique_ptr<Unit>> units_;
+};
+
 class Mage : public Unit {
 public:
     Mage() = default;
